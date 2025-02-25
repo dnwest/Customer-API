@@ -1,23 +1,24 @@
-📌 Customer API
+<h1>📌 Customer API</h1>
 
-🛠️ About the Project
+<h2>🛠️ About the Project</h2>
 
-This is a RESTful API developed in Java with Spring Boot for customer management. The project follows a microservices architecture and includes basic CRUD operations (Create, Read, Update, Delete).
+This is a small piece of code from a RESTful API developed in Java with Spring Boot for client management. The project follows the microservices architecture and includes basic CRUD operations (Create, Read, Update, Delete).
 
-🚀 Technologies Used
+<h3>🚀 Technologies Used</h3>
 
-☕ Java 17
+<li>☕ Java 17</li>
 
-🌱 Spring Boot 3
+<li>🌱 Spring Boot 3</li>
 
-🗄️ Spring Data JPA
+<li>🗄️ Spring Data JPA</li>
 
-🛢️ H2 Database (in-memory database for testing)
+<li>🛢️ H2 Database (in-memory database for testing)</li>
 
-✅ JUnit for unit testing
+<li>✅ JUnit for unit testing</li>
 
-📂 Project Structure
+<h3>📂 Project Structure</h3>
 
+```java
 customer-api/
 │── src/main/java/com/example/customerapi
 │   ├── CustomerApiApplication.java  # Main Spring Boot class
@@ -27,45 +28,50 @@ customer-api/
 │   ├── controller/CustomerController.java  # API endpoints
 │── src/test/java/com/example/customerapi
 │   ├── CustomerApiApplicationTests.java  # Unit tests
+```
 
-📌 Available Endpoints
+<h2>📌 Available Endpoints</h2>
 
-📌 List all customers
+<h3>📌 List all customers</h3>
 
+```java
 GET /customers
+```
 
-🔍 Get a customer by ID
+<h3>🔍 Get a customer by ID</h3>
 
+```java
 GET /customers/{id}
+```
+<h3>➕ Create a new customer</h3>
 
-➕ Create a new customer
-
+```java
 POST /customers
 Content-Type: application/json
 {
   "name": "John Doe",
   "email": "john@example.com"
 }
+```
 
-✅ Testing
+<h3>✅ Testing</h3>
 
 The project includes unit tests using JUnit to ensure code quality.
 
-📜 How to Run the Project
+<h2>📜 How to Run the Project</h2>
 
-Clone this repository
+1. Clone this repository
 
-Navigate to the project folder
+2. Navigate to the project folder
 
-Run the command:
+3. Run the command:
 
+```java
 mvn spring-boot:run
+```
 
-The API will be available at http://localhost:8080
+4. The API will be available at http://localhost:8080
 
-📝 License
+<h2>📝 License</h2>
 
 This project is open-source and can be used as needed.
-
-🚀 Developed by Cristian Fernandes
-
